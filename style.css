@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+body {
+    margin: 0;
+    padding: 40px;
+    background-color: #1B1F3B;
+    font-family: "Poetsen One", Arial, sans-serif;
+    color: #F0F0F0;
+}
+
+.slider-container {
+    width: 320px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px 60px;
+    text-align: center;
+    background-color: #141225;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 44px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input[type="range"] {
+    width: 100%;
+    appearance: none;
+    height: 10px;
+    background: #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    background: #ecd50a;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    transition: transform 0.2s;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+.value {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn1, .btn2 {
+    display: block;
+    width: 240px;
+    margin: 20px auto;
+    padding: 15px 30px;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: "Poetsen One", sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn1 {
+    background-color: #ecd50a;
+    color: #1B1F3B;
+}
+
+.btn1:hover {
+    background-color: #d4be09;
+    transform: scale(1.05);
+}
+
+.btn2 {
+    background-color: #8aa0c11d;
+    color: #8aa0c1;
+}
+
+.btn2:hover {
+    background-color: #8aa0c138;
+    transform: scale(1.05);
+}
+
+    /* Règles */
+
+.game-rules {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+    background-color: #141225;
+    color: #f0f0f0;
+    font-family: "Poetsen One", sans-serif;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.7);
+}
+
+.game-rules h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.game-rules h2 {
+    margin-top: 40px;
+    font-size: 28px;
+    color: #ecd50a;
+    text-transform: uppercase;
+}
+
+.class-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.role-card {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.civil {
+    background-color: #1e2b50;
+    border-left: 8px solid #5bc0de;
+    transition: 0.3s;
+}
+
+.undercover {
+    background-color: #392444;
+    border-left: 8px solid #d982f7;
+    transition: 0.3s;
+}
+
+.mrwhite {
+    background-color: #2f2f2f;
+    border-left: 8px solid #ffffff88;
+    transition: 0.3s;
+}
+
+.civil:hover, .undercover:hover, .mrwhite:hover {
+    transform: scale(1.05);
+}
+.role-card h4 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #444;
+    margin: 40px 0;
+}
+
+.phase {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #1c1c30;
+    border-left: 5px solid #ecd50a;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.phase:hover {
+    transform: scale(1.05);
+}
+
+.phase h4 {
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: #ecd50a;
+}
+
+.victory {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: 20px;
+    background-color: #1e1e2f;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.trophy {
+    font-size: 50px;
+    margin-top: -10px;
+    align-self: center;
+}
+
+.victory p {
+    margin-bottom: 10px;
+}
+
+.btn-return {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0;
+    padding: 12px 24px;
+    background-color: #ecd50a;
+    color: #1B1F3B;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-return:hover {
+    background-color: #d4be09;
+    transform: scale(1.05);
+}
+
+
+    /* Responsive Règles */
+
+@media (max-width: 768px) {
+    .class-container {
+        flex-direction: column;
+    }
+
+    .victory {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .trophy {
+        margin-bottom: 10px;
+    }
+}
+
+    /* Partie */
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+    background-color: #141225;
+    color: #f0f0f0;
+    font-family: "Poetsen One", sans-serif;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.7);
+}
+
+.game-container .value {
+    margin: 0;
+}
+
+    /* Partie */
+
+#card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 40px;
+    max-width: 900px;
+    margin: 40px auto;
+    justify-content: center;
+}
+
+.carte-wrapper {
+    perspective: 1000px;
+    width: 160px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.carte-wrapper:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(236, 213, 10, 0.6);
+}
+
+.carte {
+    position: relative;
+    width: 100%;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    background-color: transparent;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.5s;
+}
+
+.carte-front, .carte-back {
+    width: 100%;
+    height: 220px;
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    color: #f0f0f0;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    user-select: none;
+    flex-shrink: 0;
+}
+
+.carte-front {
+    background-color: #1c1c30;
+    border-left: 8px solid #ecd50a;
+    transition: box-shadow 0.3s ease;
+}
+
+.carte-back {
+    border-left: 8px solid transparent;
+}
+
+.civil {
+    background-color: #1e2b50;
+    border-left-color: #5bc0de;
+}
+
+.undercover {
+    background-color: #392444;
+    border-left-color: #d982f7;
+}
+
+.mrwhite {
+    background-color: #2f2f2f;
+    border-left-color: #ffffff88;
+}
+
+.carte.active {
+    transform: translateY(-220px);
+    box-shadow: 0 0 30px 8px rgba(236, 213, 10, 0.9);
+    z-index: 10;
+}
+
+@media (max-width: 1200px) {
+  #card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  #card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
